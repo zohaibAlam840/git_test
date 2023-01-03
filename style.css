@@ -1,0 +1,53 @@
+:root{
+    --divRC: 16; 
+}
+*{
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 3vw;
+}
+.buttonContainer button{
+    margin-bottom: 3vh;
+    background-color: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: none;
+    box-shadow:0px 5px 5px #464646;
+    transition: 150ms;
+}
+.buttonContainer button:hover{
+    transform: translateY(-7px);
+    background-color: #2EE59D;
+    color: white;
+    box-shadow:0px 5px 5px #a1e7ca;
+}
+.gridContainer{
+    display: grid;
+    background-color: #2EE59D;
+    padding: 2vh;
+    width: 50vw;
+    height: 90vh;
+    grid-template-columns: repeat(var(--divRC),1fr);
+    grid-template-rows: repeat(var(--divRC),1fr);
+}
+.gridContainer div{
+    border: 0.5px solid rgb(197, 194, 194);
+    background-color: white;
+}
