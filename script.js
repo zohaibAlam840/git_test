@@ -57,13 +57,11 @@ function selectColor(){
             }
             else if(item.value==3){
                 let randomColor = colorPicker.value;
-                console.log(randomColor);
                 selectedColor = 'background-color:'+randomColor+';';
-                console.log(selectedColor);
                   
             }          
             setColor=selectedColor;
-            console.log(setColor);
+            
         })
         
     })
