@@ -50,4 +50,12 @@ body{
 .gridContainer div{
     border: 0.5px solid rgb(197, 194, 194);
     background-color: white;
+    cursor: pointer;
+}
+#color input{
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    height: 25px;
+    width: 25px;
 }
